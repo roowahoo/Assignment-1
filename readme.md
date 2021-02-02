@@ -1,7 +1,7 @@
-**Strategy**
+# Strategy
 ## Site owner's goals: 
 To shed light on current and cold cases of missing people in Singapore and to provide a channel for tip-offs on these cases. 
-## Users: 
+# Users: 
 1.General public
 2.Friends/family members of missing people  
 ## User's goals: 
@@ -28,7 +28,7 @@ About us(main page)     /Cases                  /Report
 ![image](skeleton/main.png)
 ## About us page: 
 ![image](skeleton/about-us.png)
-## Report page:
-![image](skeleton/report.png)
 ## Cases page:
 ![image](skeleton/cases.png)
+## Report page:
+![image](skeleton/report.png)
