@@ -18,10 +18,7 @@ For friends/family members of missing people to reach a wider audience(other par
 2. Reporting form is provided in thai, malay, mandarin.
 
 # Structure
-
-About us(main page)     /Cases                  /Report
-=>News API              =>Map markers           =>Form
-=>Map                   =>Missing person info
+![image](skeleton/structure.png)
 
 # Skeleton
 ## Main page: 
