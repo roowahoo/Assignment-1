@@ -12,7 +12,7 @@ For friends/family members of missing people to reach a wider audience(other par
 ## Functional:
 1. Users can click on markers on a map to see the last seen locations and description of missing people.
 2. Users can tip off, report cases with the option to insert images.
-3. Users can search for news reports from local news outets.
+3. Users can read missing people news reports from local news outlets.
 ## Non-functional:
 1. Mobile responsiveness
 2. Reporting form is provided in thai, malay, mandarin.
