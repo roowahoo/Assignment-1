@@ -11,11 +11,15 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g' //demo access token
 }).addTo(map);
 
-let mcdonaldmarker = L.marker([1.314,103.852]);
+let mcdonaldmarker = L.marker([1.315206,103.851742]);
 mcdonaldmarker.addTo(map);
 mcdonaldmarker.bindPopup("<p>Owen Road</p>")
 
-let yachescortsmarker = L.marker([15.038,51.766]);
+let yachescortsmarker = L.marker([1.271557,103.881497]);
 yachescortsmarker.addTo(map);
 yachescortsmarker.bindPopup("<p>Eastern Anchorage</p>")
+
+let meditationretreatmarker = L.marker([2.220737,104.067713]);
+meditationretreatmarker.addTo(map);
+meditationretreatmarker.bindPopup("<p>Pulau Sibu Besar</p>")
 
