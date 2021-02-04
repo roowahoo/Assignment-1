@@ -9,21 +9,23 @@
 const baseURL = 'https://gnews.io/api/v4/search?';
 async function displayNews() {
     let response = await axios.get(baseURL + 'q=missing%20person&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
-    console.log(response.data)
-    for (let d of response.data) {
+    let articles=response.data.articles
+    console.log(articles)
+    for (let d of articles) {
         let template = `
         <ul class="list-unstyled">
             <li class="media">
-                // <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
+                // <img class="mr-3" src="${d.image}" alt="Generic placeholder image">
                 <div class="media-body">
                     <h1 class="mt-0 mb-1">${d.title}</h1>
                     <h2>${d.description}</h2>
-                    <p>${d.data.content}</p>
+                    <p>${d.content}</p>
+                    
                     
                 </div>
             </li>
         </ul>`
-        document.querySelector('#news').innerHTML = template
+        document.querySelector('#news').innerHTML += template
     }
     
 }
