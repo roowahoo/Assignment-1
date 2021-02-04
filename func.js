@@ -1,10 +1,3 @@
-// const baseURL='https://newsapi.org/v2/everything?';
-// async function displayNews(){
-//     let response=await axios.get(baseURL+'qInTitle=missing&apiKey=e1ab834da5ee4901a89ce0b49183438b')
-//     console.log(response.data)
-// }
-// displayNews()
-
 
 const baseURL = 'https://gnews.io/api/v4/search?';
 async function displayNews() {
@@ -59,24 +52,7 @@ async function displayNews() {
   </a>
 </div>`
     document.querySelector('#news').innerHTML = carousel
-        // <ul class="list-unstyled">
-        //     <li class="media">
-        //         <img class="mr-3" src="${d.image}" alt="">
-        //         <div class="media-body">
-        //             <h1 class="mt-0 mb-1">${d.title}</h1>
-        //             <h2>${d.description}</h2>
-        //             <p>${d.content}</p>
-        //             <p>${d.publishedAt}</p>
-        //             <a class="btn btn-primary" href="${d.source.url}" role="button">Read More</a>
-                    
-                    
-        //         </div>
-        //     </li>
-        // </ul>`
-        
-        
-    // }
-    
+
 }
 displayNews()
 

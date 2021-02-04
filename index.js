@@ -1,15 +1,17 @@
-// const baseURL='https://newsapi.org/v2/everything?';
+let singapore = [ 1.3521,103.8198]; // #1 Singapore latlng
+let map = L.map('sg-map').setView(singapore, 13); // #2 Set the center point
 
-// var url = 'http://newsapi.org/v2/everything?' +
-//           'q=Apple&' +
-//           'from=2021-02-03&' +
-//           'sortBy=popularity&' +
-//           'apiKey=e1ab834da5ee4901a89ce0b49183438b';
+// setup the tile layers
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g' //demo access token
+}).addTo(map);
 
-// var req = new Request(url);
-
-// fetch(req)
-//     .then(function(response) {
-//         console.log(response.json());
-//     })
+// let cambridgeMarker= L.marker([52.2122,0.1549]);
+// cambridgeMarker.addTo(map);
+// cambridgeMarker.bindPopup("<p>Abbey Stadium</p>")
 
