@@ -11,7 +11,11 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g' //demo access token
 }).addTo(map);
 
-// let cambridgeMarker= L.marker([52.2122,0.1549]);
-// cambridgeMarker.addTo(map);
-// cambridgeMarker.bindPopup("<p>Abbey Stadium</p>")
+let mcdonaldmarker = L.marker([1.314,103.852]);
+mcdonaldmarker.addTo(map);
+mcdonaldmarker.bindPopup("<p>Owen Road</p>")
+
+let yachescortsmarker = L.marker([15.038,51.766]);
+yachescortsmarker.addTo(map);
+yachescortsmarker.bindPopup("<p>Eastern Anchorage</p>")
 
