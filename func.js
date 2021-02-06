@@ -14,31 +14,40 @@ async function displayNews() {
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <a href=${articles[0].url}>
-      <img src="${articles[0].image}" class="d-block w-100" alt="...">
-    </a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[0].title}</h5>
-        <h2>${articles[0].description}</h2>
-        
+      <img src="${articles[0].image}" class="d-block w-100" alt="article-image">
+      <div class="carousel-caption d-none d-md-block" >
+        <div class='newsheading'>
+        <a href=${articles[0].url}>
+        <h2>${articles[0].title}</h2>
+        </a>
+        <h5>${articles[0].description}</h5>
+        </div>
       </div>
     </div>
     <div class="carousel-item">
-    <a href=${articles[1].url}>
+    
       <img src="${articles[1].image}" class="d-block w-100" alt="...">
-    </a>
+    
       <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[1].title}</h5>
-        <h2>${articles[1].description}</h2>
+        <div class='newsheading'>
+        <a href=${articles[1].url}>
+        <h2>${articles[1].title}</h2>
+        </a>
+        <h5>${articles[1].description}</h5>
+        </div>
       </div>
     </div>
     <div class="carousel-item">
-    <a href=${articles[2].url}>
+    
       <img src="${articles[2].image}" class="d-block w-100" alt="...">
-    </a>
+    
       <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[2].title}</h5>
-        <h2>${articles[2].description}</h2>
+        <div class='newsheading'>
+        <a href=${articles[2].url}>
+        <h2>${articles[2].title}</h2>
+        </a>
+        <h5>${articles[2].description}</h5>
+        </div>
       </div>
     </div>
   </div>

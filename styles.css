@@ -1,0 +1,18 @@
+.newsheading{
+    background-color: rgba(161, 155, 155, 0.707);
+    width:100%;
+    padding:20px 60px
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+
+#news{
+    height:80vh
+}
