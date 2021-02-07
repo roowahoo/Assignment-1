@@ -20,7 +20,10 @@ mcdonaldmarker.bindPopup(
             <h5 class="card-title">McDonald's Boys</h5>
             <p class="card-text">Name: Toh Hong Huat and Keh Chin Ann</p>
             <p class="card-text">Last seen: Owen School</p>
-            <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-outline-info">Read More</a>
+            <div class='d-flex justify-content-between'>
+                <a href="#" class="btn btn-warning text-dark">Report</a>
+                <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-info text-light">Read More</a>
+            <div>
         </div>
     </div>`
 )
