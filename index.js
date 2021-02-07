@@ -13,22 +13,24 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 let mcdonaldmarker = L.marker([1.315206, 103.851742]);
 mcdonaldmarker.addTo(map);
 mcdonaldmarker.bindPopup(
-    `<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>`
+    `
+    <div class="card" style="width: 18rem;">
+        <img src="images/mcdonalds.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">McDonald's Boys</h5>
+            <p class="card-text">Name: Toh Hong Huat and Keh Chin Ann</p>
+            <p class="card-text">Last seen: Owen School</p>
+            <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-outline-info">Read More</a>
+        </div>
+    </div>`
 )
 
 
-let yachescortsmarker = L.marker([1.271557,103.881497]);
+let yachescortsmarker = L.marker([1.271557, 103.881497]);
 yachescortsmarker.addTo(map);
 yachescortsmarker.bindPopup("<p>Eastern Anchorage</p>")
 
-let meditationretreatmarker = L.marker([2.220737,104.067713]);
+let meditationretreatmarker = L.marker([2.220737, 104.067713]);
 meditationretreatmarker.addTo(map);
 meditationretreatmarker.bindPopup("<p>Pulau Sibu Besar</p>")
 

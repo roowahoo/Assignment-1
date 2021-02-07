@@ -17,18 +17,36 @@ a:hover{
     height:80vh
 }
 
+#sg-map {
+    height: 80vh;
+}
+
+.btn{
+    text-align:right;
+}
+
+
 @media (min-width: 320px){
     h2{
         font-size: 10px;
+    }
+    .navbar-brand{
+    position:static;
     }
 }
 @media (min-width: 768px){
     h2{
         font-size: 30px;
     }
+    .navbar-brand{
+    position:static;
+    }
 }
 @media (min-width: 1200px){
     h2{
         font-size: 30px;
+    }
+    .navbar-brand{
+    position:absolute;
     }
 }
