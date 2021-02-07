@@ -13,40 +13,39 @@ async function displayNews() {
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
+
     <div class="carousel-item active">
       <img src="${articles[0].image}" class="d-block w-100" alt="article-image">
-      <div class="carousel-caption d-none d-md-block" >
+      <div class="carousel-caption" >
         <div class='newsheading'>
         <a href=${articles[0].url}>
         <h2>${articles[0].title}</h2>
         </a>
-        <h5>${articles[0].description}</h5>
+        <h5 class='d-none d-md-block'>${articles[0].description}</h5>
         </div>
       </div>
     </div>
+
     <div class="carousel-item">
-    
       <img src="${articles[1].image}" class="d-block w-100" alt="...">
-    
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <div class='newsheading'>
         <a href=${articles[1].url}>
         <h2>${articles[1].title}</h2>
         </a>
-        <h5>${articles[1].description}</h5>
+        <h5 class='d-none d-md-block'>${articles[1].description}</h5>
         </div>
       </div>
     </div>
+
     <div class="carousel-item">
-    
       <img src="${articles[2].image}" class="d-block w-100" alt="...">
-    
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption">
         <div class='newsheading'>
         <a href=${articles[2].url}>
         <h2>${articles[2].title}</h2>
         </a>
-        <h5>${articles[2].description}</h5>
+        <h5 class='d-none d-md-block'>${articles[2].description}</h5>
         </div>
       </div>
     </div>
