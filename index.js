@@ -15,19 +15,20 @@ mcdonaldmarker.addTo(map);
 mcdonaldmarker.bindPopup(
     `
     <div class="card" style="width: 18rem;">
-        <img src="images/mcdonalds.jpg" class="card-img-top" alt="...">
+        <img src="images/mcdonalds.jpg" class="card-img-top" alt="photo of missing boys">
         <div class="card-body">
             <h5 class="card-title">McDonald's Boys</h5>
             <p class="card-text">Name: Toh Hong Huat and Keh Chin Ann</p>
             <p class="card-text">Last seen:Chin Ann was last seen leaving the school grounds to nearby shops while Hong Huat was last seen by his mother when leaving for school.</p>
             <p class="card-text">Missing since: 14 May 1986</p>
             <div class='d-flex justify-content-between'>
-                <a href="#" class="btn btn-warning btn-sm text-dark">Report</a>
-                <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-primary btn-sm text-light">Read More</a>
+                <a href="#" class="btn btn-warning btn-sm text-dark px-3">Report</a>
+                <i class="fas fa-link"></i>
+                <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-primary btn-sm text-light px-3">Read More</a>
             </div>
         </div>
-    </div>`)
-
+    </div>`
+    )
 
 
 let yachescortsmarker = L.marker([1.271557, 103.881497]);
