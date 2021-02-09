@@ -9,11 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+
     <!-- Custom CSS -->
     <link href='styles.css' rel='stylesheet'>
     <title>Report</title>
@@ -45,21 +47,67 @@
         </div>
     </nav>
     <form class='p-3'>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Name</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+
+    <div class='d-flex'>
+        <div class="form-check me-4">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Report
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Tip-off
+            </label>
+        </div>
+    </div>
+
+        <div class="d-flex">
+            <div class='me-5 my-3'>
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class='ms-5 my-3'>
+                <label class="form-label">Contact</label>
+                <input type="text" class="form-control" id="contact" placeholder='&#x1F4DE'>
+            </div>
+
+        </div>
+
+        <div class="d-flex">
+            <div class='me-5 my-3'>
+                <label class="form-label">Name of missing person</label>
+                <input type="text" class="form-control" id="namemissing">
+            </div>
+            <div class='ms-5 my-3'>
+                <label class="form-label">Date last seen</label>
+                <input type="text" class="form-control" id="date" placeholder='&#x1F4C6'>
+            </div>
+        </div>
+
+        <label>Address last seen*</label>
+        <input type='text' class='form-control' id='address'>
+
+        <div class="d-flex">
+            <div class='me-5 my-3'>
+                <label class="form-label">City</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class='mx-5 my-3'>
+                <label class="form-label">State</label>
+                <input type="text" class="form-control" id="state">
+            </div>
+            <div class='mx-5 my-3'>
+                <label class="form-label">Zip code</label>
+                <input type="text" class="form-control" id="zipcode">
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
