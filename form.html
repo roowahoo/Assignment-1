@@ -46,67 +46,63 @@
             </div>
         </div>
     </nav>
-    <form class='p-3'>
-
-    <div class='d-flex'>
-        <div class="form-check me-4">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-                Report
-            </label>
-        </div>
-
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-                Tip-off
-            </label>
-        </div>
-    </div>
-
-        <div class="d-flex">
-            <div class='me-5 my-3'>
+    <!-- form -->
+    <form class='m-3'>
+        <div class="row">
+            <div class='col-md-4'>
                 <label class="form-label">Name</label>
                 <input type="text" class="form-control" id="name">
-            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
-            <div class='ms-5 my-3'>
+            <div class='col-md-4'>
                 <label class="form-label">Contact</label>
                 <input type="text" class="form-control" id="contact" placeholder='&#x1F4DE'>
             </div>
-
         </div>
 
-        <div class="d-flex">
-            <div class='me-5 my-3'>
+        <div class="row">
+            <div class='col-md-4'>
                 <label class="form-label">Name of missing person</label>
                 <input type="text" class="form-control" id="namemissing">
             </div>
-            <div class='ms-5 my-3'>
+            <div class='col-md-4'>
                 <label class="form-label">Date last seen</label>
                 <input type="text" class="form-control" id="date" placeholder='&#x1F4C6'>
             </div>
         </div>
 
-        <label>Address last seen*</label>
-        <input type='text' class='form-control' id='address'>
+        <div class='col-md-10'>
+            <label>Address last seen*</label>
+            <input type='text' class='form-control' id='address'>
+        </div>
 
-        <div class="d-flex">
-            <div class='me-5 my-3'>
+
+        <div class="row">
+            <div class='col-md-4'>
                 <label class="form-label">City</label>
                 <input type="text" class="form-control" id="city">
             </div>
-            <div class='mx-5 my-3'>
+            <div class='col-md-4'>
                 <label class="form-label">State</label>
                 <input type="text" class="form-control" id="state">
             </div>
-            <div class='mx-5 my-3'>
+            <div class='col-md-2'>
                 <label class="form-label">Zip code</label>
                 <input type="text" class="form-control" id="zipcode">
             </div>
         </div>
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+            <!-- <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button> -->
+            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+                aria-label="Upload">
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
     </form>
 
     <!-- Optional JavaScript; choose one of the two! -->

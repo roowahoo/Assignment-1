@@ -1,4 +1,3 @@
-
 const baseURL = 'https://gnews.io/api/v4/search?';
 async function displayNews() {
     let response = await axios.get(baseURL + 'q=missing%20person&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
@@ -63,4 +62,7 @@ async function displayNews() {
 
 }
 displayNews()
+
+const baseUrl='https://60264cfe186b4a001777ff2b.mockapi.io'
+
 
