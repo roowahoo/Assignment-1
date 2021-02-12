@@ -63,17 +63,7 @@ async function displayNews() {
 displayNews()
 
 const baseUrl2 = 'https://60264cfe186b4a001777ff2b.mockapi.io'
-// function createCase(){
-//     document.querySelector('submit-btn').addEventListener('click', async function(){
-//         let name=document.querySelector('#name').value
-//         let contact=document.querySelector('#date').value
-//         let address=document.querySelector('#address').value
-//         let payload={
 
-//         }
-
-//     })
-// }
 async function displayCases() {
     let response = await axios.get(baseUrl2 + '/cases');
     console.log(response.data);
@@ -86,7 +76,7 @@ async function displayCases() {
           <h5 class="card-title">${x.name}</h5>
           
               <p class='card-text'>Place Last Seen: ${x.place_last_seen}</p>
-              <p class='card-text'>Date last seen: ${x.place_last_seen}</p>
+              <p class='card-text'>Date last seen: ${x.date_last_seen}</p>
               <p class='card-text'>Description: ${x.description}</p>
           
         </div>
@@ -97,3 +87,25 @@ async function displayCases() {
 }
 displayCases()
 
+// function createCase(){
+//     document.querySelector('submit-btn').addEventListener('click', async function(){
+//         let name=document.querySelector('#name').value
+//         let date=document.querySelector('#date').value
+//         let address=document.querySelector('#address').value
+//         let description=document.querySelector('#description').value
+//         let payload={
+//             name=name,
+//             contact=contact,
+//             address=address,
+//             description=description
+//         }
+//         try {
+//             let response=await axios.post(baseUrl2 + '/cases', payload)
+//         }
+//         catch (e){
+//             alert('Failed to create case');
+//             console.log(e)
+//         }
+
+//     })
+// }
