@@ -1,10 +1,9 @@
-const baseURL = 'https://gnews.io/api/v4/search?';
+const baseUrl = 'https://gnews.io/api/v4/search?';
 async function displayNews() {
-    let response = await axios.get(baseURL + 'q=missing%20person&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
-    let articles=response.data.articles
+    let response = await axios.get(baseUrl + 'q=missing%20person&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
+    let articles = response.data.articles
     console.log(articles)
-    // for (let d of articles) {
-        let carousel = 
+    let carousel =
         `<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -63,6 +62,38 @@ async function displayNews() {
 }
 displayNews()
 
-const baseUrl='https://60264cfe186b4a001777ff2b.mockapi.io'
+const baseUrl2 = 'https://60264cfe186b4a001777ff2b.mockapi.io'
+// function createCase(){
+//     document.querySelector('submit-btn').addEventListener('click', async function(){
+//         let name=document.querySelector('#name').value
+//         let contact=document.querySelector('#date').value
+//         let address=document.querySelector('#address').value
+//         let payload={
 
+//         }
+
+//     })
+// }
+async function displayCases() {
+    let response = await axios.get(baseUrl2 + '/cases');
+    console.log(response.data);
+    let cases=response.data;
+
+    for (let x of cases) {
+        let html = `
+        <div class="card m-3" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${x.name}</h5>
+          
+              <p class='card-text'>Place Last Seen: ${x.place_last_seen}</p>
+              <p class='card-text'>Date last seen: ${x.place_last_seen}</p>
+              <p class='card-text'>Description: ${x.description}</p>
+          
+        </div>
+        </div>
+        `;
+        document.querySelector('#cases').innerHTML += html;
+    }
+}
+displayCases()
 
