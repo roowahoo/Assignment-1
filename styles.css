@@ -34,6 +34,7 @@ a:hover{
     text-align:center;
     /* border: 3px solid black; */
     margin-top:150px;
+    width:50%;
 }
 
 #hello h1{
@@ -51,10 +52,12 @@ a:hover{
     100%{transform: rotate(10deg)}
 }
 
-#hello p{
+#hello p, #hello>div{
     font-size:20px;
     margin-top:30px;
+    list-style-position: inside;
 }
+
 
 @media (min-width: 280px){
     h2{

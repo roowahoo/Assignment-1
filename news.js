@@ -3,6 +3,7 @@ async function displayNews() {
     let response = await axios.get(baseUrl + 'q=murder%20singapore&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
     let articles = response.data.articles
     console.log(articles)
+
     let carousel =
         `<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
@@ -91,7 +92,7 @@ const baseUrl2 = 'https://60264cfe186b4a001777ff2b.mockapi.io'
 async function displayCases() {
     let response = await axios.get(baseUrl2 + '/cases');
     console.log(response.data);
-    let cases=response.data;
+    let cases = response.data;
 
     for (let x of cases) {
         let html = `
@@ -111,22 +112,22 @@ async function displayCases() {
 }
 displayCases()
 
-function createCase(){
-    document.querySelector('submit-btn').addEventListener('click', async function(){
-        let name=document.querySelector('#name').value
-        let date=document.querySelector('#date').value
-        let address=document.querySelector('#address').value
-        let description=document.querySelector('#description').value
-        let payload={
-            name:name,
-            contact:contact,
-            address:address,
-            description:description
+function createCase() {
+    document.querySelector('submit-btn').addEventListener('click', async function () {
+        let name = document.querySelector('#name').value
+        let date = document.querySelector('#date').value
+        let address = document.querySelector('#address').value
+        let description = document.querySelector('#description').value
+        let payload = {
+            name: name,
+            contact: contact,
+            address: address,
+            description: description
         }
         try {
-            let response=await axios.post(baseUrl2 + '/cases', payload)
+            let response = await axios.post(baseUrl2 + '/cases', payload)
         }
-        catch (e){
+        catch (e) {
             alert('Failed to create case');
             console.log(e)
         }
