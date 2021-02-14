@@ -32,8 +32,28 @@ a:hover{
 
 #hello{
     text-align:center;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     margin-top:150px;
+}
+
+#hello h1{
+    font-family:'Courgette', cursive;
+    font-size:50px;
+    animation-name: hello;
+    animation-duration: 3s;
+}
+
+@keyframes hello{
+    0%{transform: rotate(10deg)}
+    25%{transform: rotate(-20deg)}
+    50%{transform: rotate(10deg)}
+    75%{transform: rotate(-20deg)}
+    100%{transform: rotate(10deg)}
+}
+
+#hello p{
+    font-size:20px;
+    margin-top:30px;
 }
 
 @media (min-width: 280px){

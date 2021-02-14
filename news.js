@@ -1,6 +1,6 @@
 const baseUrl = 'https://gnews.io/api/v4/search?';
 async function displayNews() {
-    let response = await axios.get(baseUrl + 'q=missing%20person&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
+    let response = await axios.get(baseUrl + 'q=murder%20singapore&country=sg&lang=en&max=5&from=2020-01-03&token=2367a834a5cff85eb01076c66979ea53')
     let articles = response.data.articles
     console.log(articles)
     let carousel =
@@ -44,6 +44,30 @@ async function displayNews() {
         <h2>${articles[2].title}</h2>
         </a>
         <h5 class='d-none d-md-block'>${articles[2].description}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="${articles[3].image}" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <div class='newsheading'>
+        <a href=${articles[3].url}>
+        <h2>${articles[3].title}</h2>
+        </a>
+        <h5 class='d-none d-md-block'>${articles[3].description}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="${articles[4].image}" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <div class='newsheading'>
+        <a href=${articles[4].url}>
+        <h2>${articles[4].title}</h2>
+        </a>
+        <h5 class='d-none d-md-block'>${articles[4].description}</h5>
         </div>
       </div>
     </div>
