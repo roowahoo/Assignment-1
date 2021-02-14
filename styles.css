@@ -30,6 +30,11 @@ a:hover{
     font-family:'Benne', serif ;
 }
 
+#hello{
+    text-align:center;
+    border: 3px solid black;
+    margin-top:150px;
+}
 
 @media (min-width: 280px){
     h2{
