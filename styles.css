@@ -1,3 +1,9 @@
+.body{
+    font-family:'Benne', serif;
+    background-color: pink
+    };
+
+
 .newsheading{
     background-color: rgba(161, 155, 155, 0.707);
     width:100%;
@@ -26,9 +32,16 @@ a:hover{
 }
 
 
+@media (min-width: 280px){
+    h2{
+        font-size: 8px;
+    }
+    .navbar-brand{
+    position:static;
+    }
+}
 
-
-@media (min-width: 320px){
+@media (min-width: 360px){
     h2{
         font-size: 10px;
     }

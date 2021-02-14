@@ -87,25 +87,25 @@ async function displayCases() {
 }
 displayCases()
 
-// function createCase(){
-//     document.querySelector('submit-btn').addEventListener('click', async function(){
-//         let name=document.querySelector('#name').value
-//         let date=document.querySelector('#date').value
-//         let address=document.querySelector('#address').value
-//         let description=document.querySelector('#description').value
-//         let payload={
-//             name=name,
-//             contact=contact,
-//             address=address,
-//             description=description
-//         }
-//         try {
-//             let response=await axios.post(baseUrl2 + '/cases', payload)
-//         }
-//         catch (e){
-//             alert('Failed to create case');
-//             console.log(e)
-//         }
+function createCase(){
+    document.querySelector('submit-btn').addEventListener('click', async function(){
+        let name=document.querySelector('#name').value
+        let date=document.querySelector('#date').value
+        let address=document.querySelector('#address').value
+        let description=document.querySelector('#description').value
+        let payload={
+            name:name,
+            contact:contact,
+            address:address,
+            description:description
+        }
+        try {
+            let response=await axios.post(baseUrl2 + '/cases', payload)
+        }
+        catch (e){
+            alert('Failed to create case');
+            console.log(e)
+        }
 
-//     })
-// }
+    })
+}
