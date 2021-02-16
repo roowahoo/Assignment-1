@@ -23,27 +23,29 @@ async function displayCases() {
 }
 displayCases()
 
-
-
-function createCase() {
-    document.querySelector('submit-btn').addEventListener('click', async function () {
-        let name = document.querySelector('#name').value
-        let date = document.querySelector('#date').value
+function createCases(){
+    document.querySelector('#submit_btn').addEventListener('click', async function(){
+        let name=document.querySelector('#name').value
+        let date=document.querySelector('#date').value
         let location = document.querySelector('#location').value
         let description = document.querySelector('#description').value
-        let payload = {
-            name: name,
+
+        let payload={
+            name:name,
             date:date,
             location: location,
             description: description
         }
-        try {
-            let response = await axios.post(baseUrl2 + '/cases', payload)
-        }
-        catch (e) {
-            alert('Failed to create case');
-            console.log(e)
-        }
+        console.log(payload)
 
+        try{
+            let response=await axios.post(baseUrl2 + '/cases', payload);
+            console.log(response)
+        }
+        catch (e){
+            alert('Failed to add case');
+            console.log(e);
+        }
     })
 }
+createCases()
