@@ -13,7 +13,7 @@ async function displayCases() {
           
               <p class='card-text'>Date Last Seen: ${x.date}</p>
               <p class='card-text'>Location last seen: ${x.location}</p>
-              <p class='card-text'>Description: ${x.description}</p>
+              <p class='card-text'>Details: ${x.details}</p>
           
         </div>
         </div>
@@ -28,15 +28,14 @@ function createCases(){
         let name=document.querySelector('#name').value
         let date=document.querySelector('#date').value
         let location = document.querySelector('#location').value
-        let description = document.querySelector('#description').value
+        let details = document.querySelector('#details').value
 
         let payload={
             name:name,
             date:date,
             location: location,
-            description: description
+            details: details
         }
-        console.log(payload)
 
         try{
             let response=await axios.post(baseUrl2 + '/cases', payload);

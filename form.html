@@ -46,8 +46,8 @@
             </div>
         </div>
     </nav>
-
-        <div class="row">
+    <div class='m-3'>
+        <div class='row'>
             <div class='col-md-4'>
                 <label class="form-label">Name of missing person</label>
                 <input type="text" class="form-control" id="name">
@@ -63,9 +63,10 @@
             <input type='text' class='form-control' id='location'>
         </div>
 
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-            <textarea class="form-control" id="description" rows="4" placeholder='Height, attire, hair color etc.'></textarea>
+        <div class="mb-3 col-md-10">
+            <label for="exampleFormControlTextarea1" class="form-label">Details</label>
+            <textarea class="form-control" id="details" rows="4"
+                placeholder='Height, attire, hair color, gender etc.'></textarea>
         </div>
 
         <!-- <div class="input-group mb-3">
@@ -75,8 +76,9 @@
         </div> -->
 
         <button class="btn btn-primary mt-3" id='submit_btn'>Submit</button>
+    </div>
 
-    <div id='cases' class='d-flex justify-content-between flex-wrap'></div>
+    <div id='cases' class='d-flex flex-wrap'></div>
 
     <!-- <div id='chart' style='height:400'></div> -->
 
