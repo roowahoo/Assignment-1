@@ -4,7 +4,6 @@
     font-size:20px;
 }
 
-
 a{
     color:white;
     text-decoration: none;
@@ -15,7 +14,11 @@ a:hover{
 }
 
 #news{
-    height:80vh
+    height:100%
+}
+
+#chart{
+    height:100%
 }
 
 #sg-map {
@@ -71,7 +74,7 @@ a:hover{
     .newsheading{
     background-color: rgba(161, 155, 155, 0.707);
     width:100%;
-    padding:10px 40px
+    padding:10px 30px
     }
 }
 
@@ -87,12 +90,12 @@ a:hover{
     .newsheading{
     background-color: rgba(161, 155, 155, 0.707);
     width:100%;
-    padding:20px 50px
+    padding:20px 40px
     }
 }
 @media (min-width: 768px){
     h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .navbar-brand{
