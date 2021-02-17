@@ -10,43 +10,55 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g'
 }).addTo(map);
 
-let mcdonaldmarker = L.marker([1.315206, 103.851742]);
-mcdonaldmarker.addTo(map);
-mcdonaldmarker.bindPopup(
-    `
-    <div class="card" style="width: 18rem;">
-        <img src="images/mcdonalds.jpg" class="card-img-top" alt="photo of missing boys">
-        <div class="card-body">
-            <h5 class="card-title">McDonald's Boys</h5>
-            <p class="card-text">Name: Toh Hong Huat and Keh Chin Ann</p>
-            <p class="card-text">Last seen:Chin Ann was last seen leaving the school grounds to nearby shops while Hong Huat was last seen by his mother when leaving for school.</p>
-            <p class="card-text">Missing since: 14 May 1986</p>
-            <div class='d-flex justify-content-between'>
-                <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark px-3">Report</a>
-                <a href="https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related" class="btn btn-primary btn-sm text-light px-3">Read More</a>
+async function getMarkers() {
+    let response = await axios.get('markers_data.json')
+    let cases=response.data.cases
+    console.log(cases)
+    let lat = parseFloat("")
+    let lng = parseFloat("")
+    for (let i of cases) {
+        lat=i.lat
+        lng=i.long
+
+        markers = L.marker([lat,lng]);
+        markers.addTo(map);
+        markers.bindPopup(`
+            <div class="card" style="width: 18rem;">
+            <img src="${i.imgSource}" class="card-img-top" alt="photo of missing boys">
+            <div class="card-body">
+                <h5 class="card-title">${i.title}</h5>
+                <p class="card-text">Name:${i.name}</p>
+                <p class="card-text">Last seen:${i.lastSeen}</p>
+                <p class="card-text">Missing since:${i.missingSince}</p>
+                <div class='d-flex justify-content-between'>
+                    <a href="${i.reportUrl}" class="btn btn-warning btn-sm text-dark px-3">Report</a>
+                    <a href="${i.moreUrl}" class="btn btn-primary btn-sm text-light px-3">Read More</a>
+                </div>
             </div>
         </div>
-    </div>`
-    )
+        `)
+    }
+}
+getMarkers()
 
 
-let yachescortsmarker = L.marker([1.271557, 103.881497]);
-yachescortsmarker.addTo(map);
-yachescortsmarker.bindPopup(
-    `
-    <div class="card" style="width: 18rem;">
-        <img src="images/yacht.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Escorts on Yacht</h5>
-            <p class="card-text">Names and age: Yeng Yoke Fun, 22, Yap Me Leng, 22, Seetoh Tai Thim, 19, Margaret Ong Guat Choo, 19, Diana Ng Kum Yim, 24</p>
-            <p class="card-text">Last seen: The five young women were reported missing after supposedly attending a party on a cargo ship at the Eastern Anchorage</p>
-            <p class="card-text">Missing since: 20 Aug 1978</p>
-            <div class='d-flex justify-content-between'>
-                <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
-                <a href="https://www.asiaone.com/malaysia/appeal-called-reopen-40-year-old-case-5-missing-malaysians-and-singaporean-n-korea" class="btn btn-primary btn-sm text-light">Read More</a>
-            </div>
-        </div>
-    </div>`)
+// let yachescortsmarker = L.marker([1.271557, 103.881497]);
+// yachescortsmarker.addTo(map);
+// yachescortsmarker.bindPopup(
+//     `
+//     <div class="card" style="width: 18rem;">
+//         <img src="images/yacht.jpg" class="card-img-top" alt="...">
+//         <div class="card-body">
+//             <h5 class="card-title">Escorts on Yacht</h5>
+//             <p class="card-text">Names and age: Yeng Yoke Fun, 22, Yap Me Leng, 22, Seetoh Tai Thim, 19, Margaret Ong Guat Choo, 19, Diana Ng Kum Yim, 24</p>
+//             <p class="card-text">Last seen: The five young women were reported missing after supposedly attending a party on a cargo ship at the Eastern Anchorage</p>
+//             <p class="card-text">Missing since: 20 Aug 1978</p>
+//             <div class='d-flex justify-content-between'>
+//                 <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
+//                 <a href="https://www.asiaone.com/malaysia/appeal-called-reopen-40-year-old-case-5-missing-malaysians-and-singaporean-n-korea" class="btn btn-primary btn-sm text-light">Read More</a>
+//             </div>
+//         </div>
+//     </div>`)
 
 let meditationretreatmarker = L.marker([2.220737, 104.067713]);
 meditationretreatmarker.addTo(map);
@@ -65,7 +77,7 @@ meditationretreatmarker.bindPopup(`
         </div>
     </div>`)
 
-    let tinalimmarker = L.marker([1.3777523229355024, 103.73522970772244]);
+let tinalimmarker = L.marker([1.3777523229355024, 103.73522970772244]);
 tinalimmarker.addTo(map);
 tinalimmarker.bindPopup(`
     <div class="card" style="width: 18rem;">
