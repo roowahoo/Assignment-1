@@ -1,7 +1,7 @@
-const baseUrl2 = 'https://3000-rose-krill-pz43ut0y.ws-us03.gitpod.io'
+const baseUrl2 = 'https://floating-forest-98452.herokuapp.com'
 
 async function displayCases() {
-    let response = await axios.get(baseUrl2 + '/cases');
+    let response = await axios.get(baseUrl2 + '/reports');
     console.log(response.data);
     let cases = response.data;
 
@@ -38,7 +38,7 @@ function createCases(){
         }
 
         try{
-            let response=await axios.post(baseUrl2 + '/cases', payload);
+            let response=await axios.post(baseUrl2 + '/report', payload);
             console.log(response)
         }
         catch (e){

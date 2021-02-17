@@ -21,6 +21,29 @@
             "missingSince":"20 Aug 1978",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://www.asiaone.com/malaysia/appeal-called-reopen-40-year-old-case-5-missing-malaysians-and-singaporean-n-korea"
+        },
+         {
+            "imgSource":"images/pulausibu.jpg",
+            "lat":"2.220737",
+            "long":"104.067713",
+            "title":"Meditation Retreat",
+            "name":"Thomas Yeo",
+            "lastSeen":"Thomas was last seen by a local at Pulau Sibu Bersar where he had visited for a meditation retreat",
+            "missingSince":"15 March 1994",
+            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
+            "moreUrl":"https://www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews"
+        },
+        {
+            "imgSource":"images/tina.jpg",
+            "lat":"1.3777523229355024",
+            "long":"103.73522970772244",
+            "title":"Visit to Grandfather's House",
+            "name":"Tina Lim Xin Ying",
+            "lastSeen":"Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.",
+            "missingSince":"22 June 2002",
+            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
+            "moreUrl":"https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/"
         }
+
     ]
 }

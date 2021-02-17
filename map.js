@@ -41,56 +41,20 @@ async function getMarkers() {
 }
 getMarkers()
 
-
-// let yachescortsmarker = L.marker([1.271557, 103.881497]);
-// yachescortsmarker.addTo(map);
-// yachescortsmarker.bindPopup(
-//     `
+// let tinalimmarker = L.marker([1.3777523229355024, 103.73522970772244]);
+// tinalimmarker.addTo(map);
+// tinalimmarker.bindPopup(`
 //     <div class="card" style="width: 18rem;">
-//         <img src="images/yacht.jpg" class="card-img-top" alt="...">
+//         <img src="images/tina.jpg" class="card-img-top" alt="...">
 //         <div class="card-body">
-//             <h5 class="card-title">Escorts on Yacht</h5>
-//             <p class="card-text">Names and age: Yeng Yoke Fun, 22, Yap Me Leng, 22, Seetoh Tai Thim, 19, Margaret Ong Guat Choo, 19, Diana Ng Kum Yim, 24</p>
-//             <p class="card-text">Last seen: The five young women were reported missing after supposedly attending a party on a cargo ship at the Eastern Anchorage</p>
-//             <p class="card-text">Missing since: 20 Aug 1978</p>
+//             <h5 class="card-title">Visit to Grandfather's House</h5>
+//             <p class="card-text">Name:Tina Lim Xin Ying</p>
+//             <p class="card-text">Last seen: Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.</p>
+//             <p class="card-text">Missing since: 22 June 2002</p>
 //             <div class='d-flex justify-content-between'>
 //                 <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
-//                 <a href="https://www.asiaone.com/malaysia/appeal-called-reopen-40-year-old-case-5-missing-malaysians-and-singaporean-n-korea" class="btn btn-primary btn-sm text-light">Read More</a>
+//                 <a href="https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/" class="btn btn-primary btn-sm text-light">See More</a>
 //             </div>
 //         </div>
 //     </div>`)
-
-let meditationretreatmarker = L.marker([2.220737, 104.067713]);
-meditationretreatmarker.addTo(map);
-meditationretreatmarker.bindPopup(`
-    <div class="card" style="width: 18rem;">
-        <img src="images/pulausibu.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Meditation Retreat</h5>
-            <p class="card-text">Name:Thomas Yeo </p>
-            <p class="card-text">Last seen: Thomas was last seen by a local at Pulau Sibu Bersar where he had visited for a meditation retreat.</p>
-            <p class="card-text">Missing since: 15 March 1994</p>
-            <div class='d-flex justify-content-between'>
-                <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
-                <a href="https://www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews" class="btn btn-primary btn-sm text-light">See More</a>
-            </div>
-        </div>
-    </div>`)
-
-let tinalimmarker = L.marker([1.3777523229355024, 103.73522970772244]);
-tinalimmarker.addTo(map);
-tinalimmarker.bindPopup(`
-    <div class="card" style="width: 18rem;">
-        <img src="images/tina.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Visit to Grandfather's House</h5>
-            <p class="card-text">Name:Tina Lim Xin Ying</p>
-            <p class="card-text">Last seen: Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.</p>
-            <p class="card-text">Missing since: 22 June 2002</p>
-            <div class='d-flex justify-content-between'>
-                <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
-                <a href="https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/" class="btn btn-primary btn-sm text-light">See More</a>
-            </div>
-        </div>
-    </div>`)
 
