@@ -1,5 +1,5 @@
-let singapore = [1.3521, 103.8198];
-let map = L.map('sg-map').setView(singapore, 13);
+let singapore = [1.808445, 103.889861];
+let map = L.map('sg-map').setView(singapore, 8);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -9,6 +9,10 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     zoomOffset: -1,
     accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g'
 }).addTo(map);
+
+// let sgLayer = L.markerClusterGroup()
+// sgLayer.addTo(map)
+
 
 async function getMarkers() {
     let response = await axios.get('markers_data.json')
@@ -23,8 +27,10 @@ async function getMarkers() {
         markers = L.marker([lat,lng]);
         markers.addTo(map);
         markers.bindPopup(`
-            <div class="card">
-            <img src="${i.imgSource}" class="card-img-top" alt="">
+        <div class="card">
+            <div class='text-center'>
+            <img src="${i.imgSource}" alt="">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">${i.title}</h5>
                 <p class="card-text">Name: ${i.name}</p>
