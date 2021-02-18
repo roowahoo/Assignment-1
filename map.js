@@ -48,16 +48,3 @@ async function getMarkers() {
     }
 }
 getMarkers()
-{/* <div class="card" style="width: 15rem;">
-            <img src="${i.imgSource}" class="card-img-top" alt="">
-            <div class="card-body">
-                <h5 class="card-title">${i.title}</h5>
-                <p class="card-text">Name:${i.name}</p>
-                <p class="card-text">Last seen:${i.lastSeen}</p>
-                <p class="card-text">Missing since:${i.missingSince}</p>
-                <div class='d-flex justify-content-between'>
-                    <a href="${i.reportUrl}" class="btn btn-warning btn-sm text-dark px-3">Report</a>
-                    <a href="${i.moreUrl}" class="btn btn-primary btn-sm text-light px-3">Read More</a>
-                </div>
-            </div>
-        </div> */}
