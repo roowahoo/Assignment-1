@@ -17,6 +17,8 @@ async function displayNews() {
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
       </ol>
       <div class="carousel-inner">
 

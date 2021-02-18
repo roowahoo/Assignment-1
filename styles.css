@@ -22,7 +22,7 @@ a:hover{
 }
 
 #sg-map {
-    height: 80vh;
+    height: 80vh
 }
 
 .link{
@@ -45,6 +45,12 @@ a:hover{
     font-size:50px;
     animation-name: hello;
     animation-duration: 3s;
+}
+
+.card{
+    border:none;
+    height:auto;
+    width:auto
 }
 
 @keyframes hello{
@@ -76,7 +82,7 @@ a:hover{
     width:100%;
     padding:10px 30px
     }
-}
+
 
 @media (min-width: 360px){
     h2{
@@ -122,4 +128,6 @@ a:hover{
     width:100%;
     padding:20px 60px
     }
+
 }
+

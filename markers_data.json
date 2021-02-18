@@ -43,6 +43,17 @@
             "missingSince":"22 June 2002",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/"
+        },
+        {
+            "imgSource":"",
+            "lat":"",
+            "long":"",
+            "title":"",
+            "name":"",
+            "lastSeen":"",
+            "missingSince":"",
+            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
+            "moreUrl":""
         }
 
     ]

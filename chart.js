@@ -3,13 +3,21 @@ const options = {
         'type': 'bar',
         'height': '100%'
     },
-    series: [
-        
-    ],
-    // xaxis:{
-    //     categories:[2011,2012,2013,2014,2015,2016,2017,2018,2019]
-    // },
-
+    plotOptions: {
+        bar: {
+            distributed: true,
+        }
+    },
+    legend:{
+        show:false
+    },
+    dataLabels:{
+        enabled:false
+    },
+    series: [],
+    fill: {
+        colors: ['#413C58', '#6D7188', '#8F9EA3', '#A3C4BC', '#B1CEB9', '#BFD7B5', '#E7EFC5', '#EDE6B5', '#F2DDA4']
+    },
     noData: {
         'text': 'Loading...'
     }
@@ -27,9 +35,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     let year = await loadYear();
     chart.updateOptions({
-        xaxis:{
-        categories:year
-    }
+        xaxis: {
+            categories: year
+        }
     })
 
 })

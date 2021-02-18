@@ -23,8 +23,27 @@ async function getMarkers() {
         markers = L.marker([lat,lng]);
         markers.addTo(map);
         markers.bindPopup(`
-            <div class="card" style="width: 18rem;">
-            <img src="${i.imgSource}" class="card-img-top" alt="photo of missing boys">
+            <div class="card">
+            <img src="${i.imgSource}" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">${i.title}</h5>
+                <p class="card-text">Name: ${i.name}</p>
+                <p class="card-text">Last seen: ${i.lastSeen}</p>
+                <p class="card-text">Missing since: ${i.missingSince}</p>
+                <div class='d-flex justify-content-between'>
+                    <a href="${i.reportUrl}" class="btn btn-warning btn-sm text-dark px-3">Report</a>
+                    <a href="${i.moreUrl}" class="btn btn-primary btn-sm text-light px-3">Read More</a>
+                </div>
+            </div>
+        </div>
+            
+        
+        `)
+    }
+}
+getMarkers()
+{/* <div class="card" style="width: 15rem;">
+            <img src="${i.imgSource}" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">${i.title}</h5>
                 <p class="card-text">Name:${i.name}</p>
@@ -35,26 +54,4 @@ async function getMarkers() {
                     <a href="${i.moreUrl}" class="btn btn-primary btn-sm text-light px-3">Read More</a>
                 </div>
             </div>
-        </div>
-        `)
-    }
-}
-getMarkers()
-
-// let tinalimmarker = L.marker([1.3777523229355024, 103.73522970772244]);
-// tinalimmarker.addTo(map);
-// tinalimmarker.bindPopup(`
-//     <div class="card" style="width: 18rem;">
-//         <img src="images/tina.jpg" class="card-img-top" alt="...">
-//         <div class="card-body">
-//             <h5 class="card-title">Visit to Grandfather's House</h5>
-//             <p class="card-text">Name:Tina Lim Xin Ying</p>
-//             <p class="card-text">Last seen: Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.</p>
-//             <p class="card-text">Missing since: 22 June 2002</p>
-//             <div class='d-flex justify-content-between'>
-//                 <a href="https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html" class="btn btn-warning btn-sm text-dark">Report</a>
-//                 <a href="https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/" class="btn btn-primary btn-sm text-light">See More</a>
-//             </div>
-//         </div>
-//     </div>`)
-
+        </div> */}
