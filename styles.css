@@ -47,12 +47,12 @@ a:hover{
     animation-duration: 3s;
 }
 
-.card{
+#mapCards{
     border:none;
     overflow:hidden;
 }
 
-.card img{
+#mapCards img{
     height:200px;
 }
 

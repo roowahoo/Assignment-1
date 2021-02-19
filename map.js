@@ -10,8 +10,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1Ijoicm9vd2Fob28iLCJhIjoiY2trcWw3dWpkMGFqdDJ3cnY5M29qMDF6byJ9.xFD3OvZSt0hRMYT4DhwB9g'
 }).addTo(map);
 
-// let sgLayer = L.markerClusterGroup()
-// sgLayer.addTo(map)
+let sgLayer = L.markerClusterGroup()
+
 
 
 async function getMarkers() {
@@ -27,7 +27,7 @@ async function getMarkers() {
         markers = L.marker([lat,lng]);
         markers.addTo(map);
         markers.bindPopup(`
-        <div class="card">
+        <div class="card" id='mapCards'>
             <div class='text-center'>
             <img src="${i.imgSource}" alt="">
             </div>
@@ -43,8 +43,10 @@ async function getMarkers() {
             </div>
         </div>
             
-        
         `)
+        markers.addTo(sgLayer)
     }
+    
 }
 getMarkers()
+sgLayer.addTo(map)
