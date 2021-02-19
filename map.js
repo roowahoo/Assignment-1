@@ -25,7 +25,7 @@ async function getMarkers() {
         lng=i.long
 
         markers = L.marker([lat,lng]);
-        markers.addTo(map);
+        // markers.addTo(map);
         markers.bindPopup(`
         <div class="card" id='mapCards'>
             <div class='text-center'>

@@ -9,11 +9,11 @@ async function displayCases() {
         let html = `
         <div class="card m-3" id='caseCards' style="width: 18rem;">
         <div class="card-body">
-          <h2 class="card-title">${x.name}</h2>
+          <h2 class="card-title fw-bold pb-2">${x.name}</h2>
           
-              <p class='card-text'>Date Last Seen: ${x.date}</p>
-              <p class='card-text'>Location last seen: ${x.location}</p>
-              <p class='card-text'>Details: ${x.details}</p>
+              <p class='card-text fw-bold'>Date Last Seen:</p><p>${x.date}</p>
+              <p class='card-text fw-bold'>Location last seen:</p><p> ${x.location}</p>
+              <p class='card-text fw-bold'>Details:</p><p> ${x.details}</p>
           
         </div>
         </div>
