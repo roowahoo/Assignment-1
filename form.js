@@ -7,9 +7,9 @@ async function displayCases() {
 
     for (let x of cases) {
         let html = `
-        <div class="card m-3" style="width: 18rem;">
+        <div class="card m-3" id='caseCards' style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">${x.name}</h5>
+          <h2 class="card-title">${x.name}</h2>
           
               <p class='card-text'>Date Last Seen: ${x.date}</p>
               <p class='card-text'>Location last seen: ${x.location}</p>
