@@ -17,7 +17,7 @@ async function displayNews() {
         `<div class="carousel-item ${text}" >
         <img src=${articles[i].image} class="d-block w-100" alt="...">
         <div class="carousel-caption">
-        <div class='newsheading font'>
+        <div class='newsheading'>
           <a href="${articles[i].url}"><h2 class='fw-bold'>${articles[i].title}</h2></a>
           <h5 class='d-none d-md-block'>${articles[i].description}</h5>
         </div>

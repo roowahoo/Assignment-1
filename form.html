@@ -47,8 +47,8 @@
         </div>
     </nav>
     <div class='m-3'>
-        <div class='row'>
-            <div class='col-md-4'>
+        <div class='d-flex justify-content-center'>
+            <div class='col-md-4 pe-5'>
                 <label class="form-label">Name of missing person:</label>
                 <input type="text" class="form-control" id="name">
             </div>
@@ -57,16 +57,18 @@
                 <input type="date" class="form-control" id="date" placeholder='&#x1F4C5 YYYY-MM-DD'>
             </div>
         </div>
-
-        <div class='col-md-10'>
-            <label>Location last seen:</label>
-            <input type='text' class='form-control' id='location'>
+        <div class='d-flex justify-content-center'>
+            <div class='col-md-8'>
+                <label>Location last seen:</label>
+                <input type='text' class='form-control' id='location'>
+            </div>
         </div>
-
-        <div class="mb-3 col-md-10">
-            <label for="exampleFormControlTextarea1" class="form-label">Details:</label>
-            <textarea class="form-control" id="details" rows="4"
-                placeholder='Height, attire, hair color, gender etc.' maxlength='170'></textarea>
+        <div class='d-flex justify-content-center'>
+            <div class="mb-3 col-md-8">
+                <label for="exampleFormControlTextarea1" class="form-label">Details:</label>
+                <textarea class="form-control" id="details" rows="4"
+                    placeholder='Height, attire, hair color, gender etc.' maxlength='170'></textarea>
+            </div>
         </div>
 
         <!-- <div class="input-group mb-3">
@@ -74,13 +76,14 @@
             <input type="file" class="form-control" id="upload" aria-describedby="inputGroupFileAddon03"
                 aria-label="Upload">
         </div> -->
-
-        <button class="btn btn-primary mt-3" id='submit_btn'>Submit</button>
+        <div class='text-center'>
+            <button class="btn btn-primary mt-3 px-5" id='submit_btn'>Submit</button>
+        </div>
     </div>
 
-    <div id='cases' class='d-flex flex-wrap'></div>
+    <div id='cases' class='d-flex flex-wrap justify-content-center'></div>
 
-    
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -88,11 +91,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js"
         integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ=="
         crossorigin="anonymous"></script>
-    
+
     <script src='form.js'></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
