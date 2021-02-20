@@ -16,7 +16,9 @@ window.addEventListener('DOMContentLoaded', async ()=>{
               <p class='card-text fw-bold'>Date Last Seen:</p><p>${x.date}</p>
               <p class='card-text fw-bold'>Location last seen:</p><p> ${x.location}</p>
               <p class='card-text fw-bold'>Details:</p><p> ${x.details}</p>
-              <button class="btn btn-danger mt-3" id='del_btn'>Delete</button>
+              <div class='d-flex justify-content-end'>
+              <button class="btn btn-danger mt-3 px-3" id='del_btn'>Delete</button>
+              </div>
           
         </div>
         </div>
