@@ -1,7 +1,13 @@
 .nav-item{
     margin-left: 10px;
     margin-right: 10px;
-    font-size:20px;
+    font-size:25px;
+    padding:20px 0;
+}
+
+#logo{
+    height:90px;
+    margin-left:10px
 }
 
 .caroBtn{
@@ -70,15 +76,14 @@ a:hover{
 #makeReport h1{
     font-size: 50px;
     text-align: center;
-    padding-top:10px;
+    padding-top:30px;
 
 }
 
 #makeReport p{
     font-size: 20px;
     text-align: center;
-    
-    padding-bottom:10px
+    padding-bottom:30px
 }
 
 #submit_btn{
@@ -189,7 +194,7 @@ a:hover{
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1024px){
     h2{
         font-size: 30px;
     }
