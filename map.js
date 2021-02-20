@@ -34,7 +34,7 @@ async function getMarkers() {
             <div class="card-body">
                 <h5 class="card-title">${i.title}</h5>
                 <p class="card-text">Name: ${i.name}</p>
-                <p class="card-text">Last seen: ${i.lastSeen}</p>
+                <p class="card-text">Summary: ${i.summary}</p>
                 <p class="card-text">Missing since: ${i.missingSince}</p>
                 <div class='d-flex justify-content-between'>
                     <a href="${i.reportUrl}" class="btn btn-warning btn-sm text-dark px-3">Report</a>

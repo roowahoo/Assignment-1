@@ -6,7 +6,7 @@
             "long":"103.851742",
             "title":"McDonald's Boys",
             "name":"Toh Hong Huat and Keh Chin Ann",
-            "lastSeen":"Chin Ann was last seen leaving the school grounds to nearby shops while Hong Huat was last seen by his mother when leaving for school",
+            "summary":"Chin Ann was last seen leaving the school grounds to nearby shops while Hong Huat was last seen by his mother when leaving for school",
             "missingSince":"14 May 1986",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://eresources.nlb.gov.sg/newspapers/Digitised/Article/straitstimes19860520-1.2.26.1?ST=1&AT=search&k=keh%20chin%20ann&QT=keh,chin,ann&oref=article-related"
@@ -17,7 +17,7 @@
             "long":"103.881497",
             "title":"Escorts on Yacht",
             "name":"Yeng Yoke Fun, 22, Yap Me Leng, 22, Seetoh Tai Thim, 19, Margaret Ong Guat Choo, 19, Diana Ng Kum Yim, 24",
-            "lastSeen":"The five young women were reported missing after supposedly attending a party on a cargo ship at the Eastern Anchorage",
+            "summary":"The five young women were reported missing after supposedly attending a party on a cargo ship at the Eastern Anchorage",
             "missingSince":"20 Aug 1978",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://www.asiaone.com/malaysia/appeal-called-reopen-40-year-old-case-5-missing-malaysians-and-singaporean-n-korea"
@@ -28,7 +28,7 @@
             "long":"104.067713",
             "title":"Meditation Retreat",
             "name":"Thomas Yeo",
-            "lastSeen":"Thomas was last seen by a local at Pulau Sibu Bersar where he had visited for a meditation retreat",
+            "summary":"Thomas was last seen by a local at Pulau Sibu Bersar where he had visited for a meditation retreat",
             "missingSince":"15 March 1994",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews"
@@ -39,7 +39,7 @@
             "long":"103.73522970772244",
             "title":"Visit to Grandfather's House",
             "name":"Tina Lim Xin Ying",
-            "lastSeen":"Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.",
+            "summary":"Tina was last seen by her father at home when he suggested Tina to visit her sick grandfather. Tina never reached her grandfather's house.",
             "missingSince":"22 June 2002",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://theindependent.sg/still-missing-choa-chu-kang-girl-who-left-to-visit-grandfather-in-2002/"
@@ -50,18 +50,29 @@
             "long":"23.7275",
             "title":"Missing in Greece",
             "name":"Kouk Leong Jin",
-            "lastSeen":"Mr Kouk arrived in Athens on the 25th for the 9th International Scientific Meeting of the Royal College of Obstetricians and Gynaecologists. An unanswered call to his friend on the 26th was when he was last heard of.",
+            "summary":"Mr Kouk arrived in Athens on the 25th for the 9th International Scientific Meeting of the Royal College of Obstetricians and Gynaecologists. An unanswered call to his friend on the 26th was when he was last heard of.",
             "missingSince":"27 Sept 2011",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://sg.news.yahoo.com/newlywed-s%E2%80%99porean-student-goes-missing-in-greece.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANGE2m8XDCgWLjaQwclxuRdHyAIs8KrNO45xtNjh5TN-tiv8jRkzrF__DTcNISnQz4UrGdbxEVFC7vuim6SpPY6kZWFN4Grs61_ycbJAxPcJPIAIy9loMZtcm32jjsf9Lxf1Gi0nIhYvTEa6nRr_MTo4krtoKEz2r5GTb3EmCQZn"
         },
         {
+            "imgSource":"images/ler.jpg",
+            "lat":"1.3762069440606894",
+            "long":"103.8828477470447",
+            "title":"Case of Anthony Ler",
+            "name":"Anthony Ler",
+            "summary":"Ler taught a 15-year-old boy how to kill his wife and offered him $100,000 to do it.",
+            "missingSince":"n/a",
+            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
+            "moreUrl":"https://www.straitstimes.com/singapore/courts-crime/guilty-as-charged-anthony-ler-lured-teen-into-killing-his-wife"
+        },
+        {
             "imgSource":"",
             "lat":"",
             "long":"",
             "title":"",
             "name":"",
-            "lastSeen":"",
+            "summary":"",
             "missingSince":"",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":""
@@ -72,18 +83,7 @@
             "long":"",
             "title":"",
             "name":"",
-            "lastSeen":"",
-            "missingSince":"",
-            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
-            "moreUrl":""
-        },
-        {
-            "imgSource":"",
-            "lat":"",
-            "long":"",
-            "title":"",
-            "name":"",
-            "lastSeen":"",
+            "summary":"",
             "missingSince":"",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":""
