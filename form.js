@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', async ()=>{
     let cases = response.data;
     let displayCases=document.querySelector('#cases')
     for (let x of cases) {
-        let eachCase=document.createElement('p')
+        let eachCase=document.createElement('div')
         let html = `
         <div class="card m-3" id='caseCards' style="width: 18rem;">
         <div class="card-body">

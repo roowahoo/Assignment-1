@@ -50,20 +50,6 @@ a:hover{
     font-family:'Benne', serif ;
 }
 
-#hello{
-    text-align:center;
-    /* border: 3px solid black; */
-    margin-top:150px;
-    width:50%;
-}
-
-#hello h1{
-    font-family:'Courgette', cursive;
-    font-size:50px;
-    animation-name: hello;
-    animation-duration: 3s;
-}
-
 #mapCards{
     border:none;
     overflow:hidden;
@@ -111,6 +97,20 @@ a:hover{
     transform:rotate(30deg);
     font-size:27px;
     text-shadow: 5px 8px 8px gray;
+}
+
+#hello{
+    /* border: 3px solid black; */
+    margin-top:150px;
+    width:50%;
+}
+
+#hello h1{
+    font-family:'Courgette', cursive;
+    font-size:50px;
+    animation-name: hello;
+    animation-duration: 3s;
+    text-align:center
 }
 
 @keyframes hello{
