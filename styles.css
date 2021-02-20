@@ -67,6 +67,10 @@ a:hover{
     height:200px;
 }
 
+#submit_btn{
+    border-radius:20px
+}
+
 #caseCards{
     background-color: #8F9EA3;
     color:black;

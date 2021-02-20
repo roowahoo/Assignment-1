@@ -14,6 +14,8 @@ async function displayCases() {
               <p class='card-text fw-bold'>Date Last Seen:</p><p>${x.date}</p>
               <p class='card-text fw-bold'>Location last seen:</p><p> ${x.location}</p>
               <p class='card-text fw-bold'>Details:</p><p> ${x.details}</p>
+              <p class='card-text fw-bold'>Id:</p><p id='id'> ${x._id}</p>
+              <button class="btn btn-danger" id='del_btn'>Delete</button>
           
         </div>
         </div>
@@ -23,28 +25,43 @@ async function displayCases() {
 }
 displayCases()
 
-function createCases(){
-    document.querySelector('#submit_btn').addEventListener('click', async function(){
-        let name=document.querySelector('#name').value
-        let date=document.querySelector('#date').value
+function createCases() {
+    document.querySelector('#submit_btn').addEventListener('click', async function () {
+        let name = document.querySelector('#name').value
+        let date = document.querySelector('#date').value
         let location = document.querySelector('#location').value
         let details = document.querySelector('#details').value
 
-        let payload={
-            name:name,
-            date:date,
+        let payload = {
+            name: name,
+            date: date,
             location: location,
             details: details
         }
 
-        try{
-            let response=await axios.post(baseUrl2 + '/report', payload);
+        try {
+            let response = await axios.post(baseUrl2 + '/report', payload);
             console.log(response)
         }
-        catch (e){
+        catch (e) {
             alert('Failed to add case');
             console.log(e);
         }
     })
 }
 createCases()
+
+
+document.querySelector('#del_btn').addEventListener('click', async function(){
+    alert('sure?')
+    let id=document.getElementById('#id').innerHTML
+    console.log(id)
+    let response=await axios.delete(baseUrl2+'/report/'+id)
+})
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     document.querySelector('#del_btn').addEventListener('click', function () {
+//     alert('sure?')
+//     })
+// })
