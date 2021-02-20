@@ -15,6 +15,9 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href='styles.css' rel='stylesheet'>
@@ -25,7 +28,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="home.html"><i class="fas fa-home"></i></a>
+            
+            <a class="navbar-brand" href="home.html">CrimeWatch</a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -49,40 +54,47 @@
 
     <!-- Form -->
     <!-- <div class='m-3 container'> -->
-        <div class='d-flex justify-content-center row p-2'>
-            <div class='col-md-4 col-12'>
-                <label class="form-label">Name of missing person:</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <div class='col-md-4 col-12'>
-                <label class="form-label">Date last seen:</label>
-                <input type="date" class="form-control" id="date" placeholder='&#x1F4C5 YYYY-MM-DD'>
-            </div>
+    <div id='makeReport'>
+        <h1>Make a Report</h1>
+        <p>Create and submit your case below to publish your missing report.</p>
+    </div>
+    <div class='d-flex justify-content-center row p-2'>
+        <div class='col-md-4 col-12'>
+            <label class="form-label">Name of missing person:</label>
+            <input type="text" class="form-control" id="name">
         </div>
-        <div class='d-flex justify-content-center p-2'>
-            <div class='col-md-8 col-12'>
-                <label>Location last seen:</label>
-                <input type='text' class='form-control' id='location'>
-            </div>
+        <div class='col-md-4 col-12'>
+            <label class="form-label">Date last seen:</label>
+            <input type="date" class="form-control" id="date" placeholder='&#x1F4C5 YYYY-MM-DD'>
         </div>
-        <div class='d-flex justify-content-center p-2'>
-            <div class="mb-3 col-md-8 col-12">
-                <label for="exampleFormControlTextarea1" class="form-label">Details:</label>
-                <textarea class="form-control" id="details" rows="4"
-                    placeholder='Height, attire, hair color, gender etc.' maxlength='170'></textarea>
-            </div>
+    </div>
+    <div class='d-flex justify-content-center p-2'>
+        <div class='col-md-8 col-12'>
+            <label>Location last seen:</label>
+            <input type='text' class='form-control' id='location'>
         </div>
-
-    
-        <div class='text-center'>
-            <button class="btn btn-primary mt-3 px-5" id='submit_btn'>Submit</button>
+    </div>
+    <div class='d-flex justify-content-center p-2'>
+        <div class="mb-3 col-md-8 col-12">
+            <label for="exampleFormControlTextarea1" class="form-label">Details:</label>
+            <textarea class="form-control" id="details" rows="4" placeholder='Height, attire, hair color, gender etc.'
+                maxlength='170'></textarea>
         </div>
     </div>
 
-    <div id='cases' class='d-flex flex-wrap justify-content-center'></div>
-        
 
-        
+    <div class='text-center'>
+        <button class="btn btn-primary mt-2 px-5" id='submit_btn'>Submit</button>
+    </div>
+    </div>
+
+    <div class='pt-5'>
+        <img id='missingImg' src='images/missing.jpg' alt='missingstamp'>
+    </div>
+    <div id='cases' class='d-flex flex-wrap justify-content-center'></div>
+
+
+
     <!-- </div> -->
 
 
