@@ -39,7 +39,6 @@ async function loadYear(){
     // console.log(yearArray)
     return yearArray
 
-
 }
 loadYear()
 

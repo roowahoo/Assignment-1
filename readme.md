@@ -1,10 +1,15 @@
+# Live URL:
+
+# Complexity Matrix
+![image](readme/complexity_matrix.png)
+
 # Strategy
 ## Site owner's goals: 
 To raise awareness of the major crimes that took place in Singapore that is known for being one of the safest countries in the world to live in.
 Also, to shed light on current and cold cases of missing people in Singapore and to provide a channel for reporting new cases. 
 # Users: 
-1.General public
-2.Friends/family members of missing people  
+1. General public
+2. Friends/family members of missing people  
 ## User's goals: 
 For the general public, it would be to be aware and watch out for their own safety which can be very easily taken for granted considering we
 are living in Singapore where laws and punishments for offenders are strictly enforced.
@@ -44,7 +49,7 @@ the quality of search.
 2. Privacy of reporters (no personal information is requested and published on the web)
 
 # Structure
-![image](skeleton/structure.png)
+![image](readme/structure.png)
 
 ## Information architecture
 ### Content Inventory
@@ -61,17 +66,18 @@ i. Links to external news sources are working
 ii.Forms are working and display an error message when submission fails
 4. Attractiveness: 
 i. Padding and margin are present to improve readability
-ii. Font size and layout changes according to screen size to improve readability 
+ii. Font size and layout changes according to screen size to improve readability. This was achieved with the use of media queries and
+the Boostrap grid system.
 
 # Skeleton
 ## Main page: 
-![image](skeleton/main.png)
+![image](readme/main.png)
 ## About us page: 
-![image](skeleton/about-us.png)
+![image](readme/about-us.png)
 ## Cases page:
-![image](skeleton/cases.png)
+![image](readme/cases.png)
 ## Report page:
-![image](skeleton/report.png)
+![image](readme/report.png)
 
 ### Interface design
 Each page consists on a navigation bar and main content section.
@@ -89,7 +95,7 @@ Report page: Includes a form for user to post their own cases and display cases 
 # Surface
 ## Visual design
 1. Colour
-As the web page is based on a solemn topic of murders and missing people, the main color palette chosen were muted colours
+As the web page is based on a solemn topic of homicides and missing people, the main color palette chosen were muted colours
 like white, gray and pastels specifically for the bar chart.
 2. Fonts
 Main font chosen resembles that of a typewriter and is easy on the eyes of the reader.

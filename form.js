@@ -24,8 +24,8 @@ window.addEventListener('DOMContentLoaded', async ()=>{
         </div>
         `;
         eachCase.innerHTML += html;
-        
         displayCases.appendChild(eachCase)
+        
         eachCase.querySelector('#del_btn').addEventListener('click',async function(){
             await axios.delete(`${baseUrl2}/report/${x._id}`)
             location.reload()
