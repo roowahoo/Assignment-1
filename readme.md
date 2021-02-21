@@ -46,7 +46,7 @@ the quality of search.
 
 ## Non-functional:
 1. Mobile responsiveness
-2. Privacy of reporters (no personal information is requested and published on the web)
+2. Privacy of users posting cases (no personal information is requested and published on the web)
 
 # Structure
 ![image](readme/structure.png)
@@ -72,6 +72,8 @@ the Boostrap grid system.
 # Skeleton
 ## Main page: 
 ![image](readme/main.png)
+### On Mobile:
+![image](readme/main_mobile.png)
 ## About us page: 
 ![image](readme/about-us.png)
 ## Cases page:
@@ -142,7 +144,7 @@ carousel and cards. Bootstrap CSS was used when it made more sense to.
 
 [Gnews](https://gnews.io/) was used to fetch news articles on the main page carousel.
 
-[ApexCharts](https://apexcharts.com/)was used to display datasets on main page.
+[ApexCharts](https://apexcharts.com/) was used to display datasets on main page.
 
 [Paul's Github](https://github.com/kunxin-chor?tab=repositories) was used as reference to recreate code that has been taught in class.
 
