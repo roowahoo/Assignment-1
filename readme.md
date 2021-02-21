@@ -46,6 +46,23 @@ the quality of search.
 # Structure
 ![image](skeleton/structure.png)
 
+## Information architecture
+### Content Inventory
+1. News articles
+2. Images of missing people
+3. Dataset for crime statistics
+
+### Interaction design
+1. Understandability: Content have short headings for quick understanding and forms have clear input titles.
+2. Learnability: Navigation links are positioned at the top where users are familiar with and are consistent throughout the pages.
+Cursors and font color changes on links on hover to indicate that it is clickable.
+3. Operability: 
+i. Links to external news sources are working
+ii.Forms are working and display an error message when submission fails
+4. Attractiveness: 
+i. Padding and margin are present to improve readability
+ii. Font size and layout changes according to screen size to improve readability 
+
 # Skeleton
 ## Main page: 
 ![image](skeleton/main.png)
@@ -55,3 +72,59 @@ the quality of search.
 ![image](skeleton/cases.png)
 ## Report page:
 ![image](skeleton/report.png)
+
+### Interface design
+Each page consists on a navigation bar and main content section.
+Home page: Includes current informational news on a carousel and charts.
+About Us page: Identifies goals of the web page and content you can expect from it.
+Cases page: Includes a map that marks out crime scenes of notorious cases as well as last seen locations of missing people. 
+Pop-ups showing more details of these cases on click.
+Report page: Includes a form for user to post their own cases and display cases posted by others.
+
+### Navigation design(bootstrap components)
+1. Fixed navigation bar on top of every page and highlighted depending on active page that user is on.
+2. Logo brings you to home page on click.
+3. Colapsible hamburger menu on smaller screens
+
+# Surface
+## Visual design
+1. Colour
+As the web page is based on a solemn topic of murders and missing people, the main color palette chosen were muted colours
+like white, gray and pastels specifically for the bar chart.
+2. Fonts
+Main font chosen resembles that of a typewriter and is easy on the eyes of the reader.
+3. Logo
+Clean logo design clearly communicates purpose of the web page and abstract background of the logo symbolizes the element of mystery in
+some cases.
+
+# Features
+## News carousel
+Latest relevant news from local news outlets are fetched from a news api and displayed on a bootstrap carousel. It is however limited to 100 
+requests per day on the free plan.
+Links to the external news sources are made available on the carousel.
+## Chart
+ApexCharts is used to display datasets retreived from data.gov.sg. 
+Next to it is a brief summary of what can be inferred from the chart.
+## Map
+Leaflets map is used to mark out significant locations where notorious crime cases took place.
+A card pop-up on click displays an image and summarissed details of what happened.
+Buttons on the cards bring users to the external news source for further reading.
+## Form
+Form allows users to create and post their own cases which will then be displayed on a mock bulletin below.
+
+# Technologies
+HTML, CSS and Javascript languages were used in this project.
+
+[Gitpod](www.gitpod.io) was the main coding platform and [Repl.it](repl.it) as a temporary testing platform when Gitpod was down.
+
+[GitHub](github.com) was used for repositories.
+
+[Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) 5 was used for it's starter template, navigation bar, 
+carousel and cards. Bootstrap CSS was used when it made more sense to.
+
+[InVision](invisionapp.com) was used for drawing skeleton.
+
+[Lucid](lucid.app) was used for drawing structure.
+
+[Canva](www.canva.com) was used for creating the logo.
+
