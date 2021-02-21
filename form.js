@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', async ()=>{
         </div>
         `;
         eachCase.innerHTML += html;
+        
         displayCases.appendChild(eachCase)
         eachCase.querySelector('#del_btn').addEventListener('click',async function(){
             await axios.delete(`${baseUrl2}/report/${x._id}`)
@@ -83,12 +84,14 @@ function createCases() {
         try {
             let response = await axios.post(baseUrl2 + '/report', payload);
             console.log(response)
+            
     
         }
         catch (e) {
             alert('Failed to add case');
             console.log(e);
         }
+    
     })
 }
 createCases()

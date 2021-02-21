@@ -112,7 +112,7 @@ Buttons on the cards bring users to the external news source for further reading
 ## Form
 Form allows users to create and post their own cases which will then be displayed on a mock bulletin below.
 
-# Technologies
+# Technologies and Credits
 HTML, CSS and Javascript languages were used in this project.
 
 [Gitpod](www.gitpod.io) was the main coding platform and [Repl.it](repl.it) as a temporary testing platform when Gitpod was down.
@@ -127,4 +127,42 @@ carousel and cards. Bootstrap CSS was used when it made more sense to.
 [Lucid](lucid.app) was used for drawing structure.
 
 [Canva](www.canva.com) was used for creating the logo.
+
+[Google maps](https://www.google.com.sg/maps) was used to get the lat long for map markers.
+
+[Google fonts](https://fonts.google.com/) was used to get Benne,Serif font
+
+[Leaflets](https://leafletjs.com/) was used to display the map in cases page.
+
+[Gnews](https://gnews.io/) was used to fetch news articles on the main page carousel.
+
+[ApexCharts](https://apexcharts.com/)was used to display datasets on main page.
+
+[Paul's Github](https://github.com/kunxin-chor?tab=repositories) was used as reference to recreate code that has been taught in class.
+
+Benjamin's missing cases API which he helped me to deploy on [Heroku](www.heroku.com) was used to fetch and post cases. 
+[MongoDB](www.mongodb.com) was used for his database.
+
+Images and articles referenced from [The Straits Times](https://www.straitstimes.com/),[Mothership](https://mothership.sg/),[Yahoo](https://sg.news.yahoo.com/),
+[NLB](eresources.nlb.gov.sg),[AsiaOne](www.asiaone.com),[MustShareNews Youtube](www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews),
+[The Independent](theindependent.sg).
+
+Missing header image from [iStock](https://www.istockphoto.com/illustrations/missing-persons)
+
+Pin icon from [Font Awesome](https://fontawesome.com/icons/map-pin?style=solid)
+
+# Testing
+## Form check
+A submission is checked by reloading the page and seeing that case has been created at the bottom.
+A failed submission due to internal errors will prompt an alert 'Failed to add case'
+
+## Delete button check
+Cases are removed when respective delete button is clicked
+
+## Navigation check
+All links in the navigation bar were checked on each page to make sure they lead to the specified place.
+
+## Hyperlink check
+Links on article titles and 'Read More' buttons were checked to make sure they lead to specified article/page.
+
 
