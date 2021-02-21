@@ -65,29 +65,8 @@
             "missingSince":"n/a",
             "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
             "moreUrl":"https://www.straitstimes.com/singapore/courts-crime/guilty-as-charged-anthony-ler-lured-teen-into-killing-his-wife"
-        },
-        {
-            "imgSource":"",
-            "lat":"",
-            "long":"",
-            "title":"",
-            "name":"",
-            "summary":"",
-            "missingSince":"",
-            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
-            "moreUrl":""
-        },
-        {
-            "imgSource":"",
-            "lat":"",
-            "long":"",
-            "title":"",
-            "name":"",
-            "summary":"",
-            "missingSince":"",
-            "reportUrl":"https://eservices.police.gov.sg/content/policehubhome/homepage/police-report.html",
-            "moreUrl":""
         }
+       
 
     ]
 }
