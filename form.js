@@ -35,55 +35,23 @@ window.addEventListener('DOMContentLoaded', async ()=>{
     }
 })
 
-// async function displayCases() {
-//     let response = await axios.get(baseUrl2 + '/reports');
-//     console.log(response.data);
-//     let cases = response.data;
-
-    
-
-//     for (let x of cases) {
-//         let html = `
-//         <div class="card m-3" id='caseCards' style="width: 18rem;">
-//         <div class="card-body">
-//           <h2 class="card-title fw-bold pb-2">${x.name}</h2>
-          
-//               <p class='card-text fw-bold'>Date Last Seen:</p><p>${x.date}</p>
-//               <p class='card-text fw-bold'>Location last seen:</p><p> ${x.location}</p>
-//               <p class='card-text fw-bold'>Details:</p><p> ${x.details}</p>
-//               <p class='card-text fw-bold'>Id:</p><p id='id'> ${x._id}</p>
-//               <button onclick="deleteCase()">Delete</button>
-          
-//         </div>
-//         </div>
-//         `;
-//         document.querySelector('#cases').innerHTML += html;
-
-//         async function deleteCase() {
-//         await axios.delete(`${baseUrl2}/report/${x._id}`)
-//     }
-//     }
-    
-// }
-// displayCases()
-
 let max = new Date();
-console.log(max)
+// console.log(max)
 let year = max.getFullYear() 
 let month = max.getMonth() +1 
 
 if (month < 10 ) {
-    month = "0" + month  
+    month = '0' + month  
 }
 let day = max.getDate() 
 if (day < 10 ) {
-    day = "0" + day
+    day = '0' + day
 }
 max = `${year}-${month}-${day}`
-console.log("Max: " + max)
+// console.log('Max: ' + max)
 let date2 = `
-        <label class="form-label">Date last seen:</label>
-            <input type="date" class="form-control" id="date" max='${max}' >
+        <label class='form-label'>Date last seen:</label>
+            <input type='date' class='form-control' id='date' max='${max}' >
         ` 
 document.querySelector('.date2').innerHTML = date2;
 

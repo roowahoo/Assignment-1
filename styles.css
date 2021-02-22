@@ -14,6 +14,7 @@ a{
     color:white;
     text-decoration: none;
 }
+
 a:hover{
     color:black;
     text-decoration: none;
@@ -36,14 +37,10 @@ a:hover{
 #genderPie {
         height:80vh;
         margin-top:20px
-    }
+}
 
 #sg-map {
     height: 80vh
-}
-
-.link{
-    color:grey;
 }
 
 .font{
@@ -64,7 +61,6 @@ a:hover{
 }
 
 #missingImg{
-    /* max-width: 100%; */
     height:20vh;
     display:block;
     margin-left:auto;
@@ -73,9 +69,7 @@ a:hover{
 }
 
 #caseCards{
-    /* background-color: #ffe8d6; */
     color:black;
-    /* border-radius:12px; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     line-height: 15px;
 }
@@ -87,7 +81,6 @@ a:hover{
 }
 
 #hello{
-    /* border: 3px solid black; */
     margin-top:150px;
     width:50%;
 }
@@ -135,14 +128,6 @@ a:hover{
         padding:10px 30px
     }
 
-    #selectYear{
-        font-size: 20px;
-        margin-top:300px;
-        padding-left:50px;
-        padding-right:10px;
-        border: 5px solid black
-    }
-
     #makeReport{
         padding-left:10px;
         padding-right:10px
@@ -183,10 +168,6 @@ a:hover{
         width:100%;
         padding:20px 40px
     }
-
-    #chartDetails{
-        font-size: 20px;
-    }
 }
 
 @media (min-width: 768px){
@@ -196,7 +177,7 @@ a:hover{
     }
 
     .newsheading h2{
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .navbar-brand{
@@ -209,11 +190,6 @@ a:hover{
         padding:20px 50px
     }
 
-    #chartDetails{
-        font-size: 25px;
-        margin-top:60%;
-    }
-
 }
 
 @media (min-width: 1024px){
@@ -223,7 +199,7 @@ a:hover{
         margin-left:10px
     }
 
-    h2{
+    .newsheading h2{
         font-size: 30px;
     }
 

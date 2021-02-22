@@ -1,21 +1,22 @@
-# Live URL:
+# Live URL
+https://roowahoo.github.io/Assignment-1/
 
 # Complexity Matrix
 ![image](readme/complexity_matrix.png)
 
 # Strategy
 ## Site owner's goals: 
-To raise awareness of the major crimes that took place in Singapore that is known for being one of the safest countries in the world to live in.
+To raise awareness of the major crimes that took place in Singapore, a country known for being one of the safest in the world to live in.
 Also, to shed light on current and cold cases of missing people in Singapore and to provide a channel for reporting new cases. 
 # Users: 
 1. General public
 2. Friends/family members of missing people  
 ## User's goals: 
-For the general public, it would be to be aware and watch out for their own safety which can be very easily taken for granted considering we
+The general public would want to be well-informed and aware of their own safety which can be very easily taken for granted considering we
 are living in Singapore where laws and punishments for offenders are strictly enforced.
 
-Apart from being aware of the chances of becoming a victim of crime themselves, there is a need for a convenient one-stop place to visit
-for current missing people reports that do not make it to major news outlets. They can then be on a look out for these missing people who
+Apart from being aware of the chances of becoming a victim of crime themselves, there is a need for a convenient one-stop place
+for current missing people reports that do not make it to the headlines. Users can then be on a look out for these missing people who
 happened to be last seen in their vicinity.
 
 For friends/family members of missing people, they would want to reach a wider audience(other parts of the world) in the search for
