@@ -42,5 +42,26 @@ async function loadYear(){
 }
 loadYear()
 
+async function loadMale(){
+    let response=await axios.get('https://data.gov.sg/api/action/datastore_search?resource_id=bbfc1f9c-efea-4dab-a0cb-560d980079cc&q=murder')
+    let series=response.data.result.records
+
+    function findMale(series){
+        return series.level_1=='Male'
+    }
+
+    let filteredSeries=series.filter(findMale)
+
+    console.log(filteredSeries)
+
+    let maleArray=[]
+    for(let object of filteredSeries){
+        yearArray.push(object.value)
+    }
+    
+    return maleArray
+
+}
+loadMale()
 
 

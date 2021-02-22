@@ -40,6 +40,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         }
     })
 
+    let male=await loadMale();
+
 })
 
 
