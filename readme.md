@@ -121,7 +121,7 @@ Buttons on the cards bring users to the external news source for further reading
 Form allows users to create and post their own cases which will then be displayed on a mock bulletin at the bottom.
 
 # Technologies and Credits
-HTML, CSS and Javascript languages were used in this project.
+HTML5, CSS3 and Javascript were used in this project.
 
 [Gitpod](www.gitpod.io) was the main coding platform and [Repl.it](repl.it) as a temporary testing platform when Gitpod was down.
 
@@ -151,7 +151,7 @@ carousel and cards. Bootstrap CSS was used when it made more sense to.
 Benjamin's missing cases API which he helped me to deploy on [Heroku](www.heroku.com) was used to fetch and post cases. 
 [MongoDB](www.mongodb.com) was used for his database.
 
-Images and articles referenced from [The Straits Times](https://www.straitstimes.com/),[Mothership](https://mothership.sg/), [Yahoo](https://sg.news.yahoo.com/), 
+Images and articles referenced from [The Straits Times](https://www.straitstimes.com/), [Mothership](https://mothership.sg/), [Yahoo](https://sg.news.yahoo.com/), 
 [NLB](eresources.nlb.gov.sg), [AsiaOne](www.asiaone.com), [MustShareNews Youtube](www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews), 
 [The Independent](theindependent.sg).
 
