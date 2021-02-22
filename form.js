@@ -67,12 +67,36 @@ window.addEventListener('DOMContentLoaded', async ()=>{
 // }
 // displayCases()
 
+let max = new Date();
+console.log(max)
+let year = max.getFullYear() 
+let month = max.getMonth() +1 
+
+if (month < 10 ) {
+    month = "0" + month  
+}
+let day = max.getDate() 
+if (day < 10 ) {
+    day = "0" + day
+}
+max = `${year}-${month}-${day}`
+console.log("Max: " + max)
+let date2 = `
+        <label class="form-label">Date last seen:</label>
+            <input type="date" class="form-control" id="date" max='${max}' >
+        ` 
+document.querySelector('.date2').innerHTML = date2;
+
 function createCases() {
     document.querySelector('#submit_btn').addEventListener('click', async function () {
         let name = document.querySelector('#name').value
         let date = document.querySelector('#date').value
         let location = document.querySelector('#location').value
         let details = document.querySelector('#details').value
+
+        if (name=='' || date==''|| location==''|| details==''){
+            alert('Please enter all fields')
+        }
 
         let payload = {
             name: name,
@@ -91,6 +115,7 @@ function createCases() {
             alert('Failed to add case');
             console.log(e);
         }
+        
     
     })
 }
