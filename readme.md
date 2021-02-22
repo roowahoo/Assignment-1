@@ -56,24 +56,24 @@ the quality of search.
 ### Content Inventory
 1. News articles
 2. Images of missing people
-3. Dataset for crime statistics
+3. Dataset for murders in Singapore
 
 ### Interaction design
 1. Understandability: Content have short headings for quick understanding and forms have clear input titles.
 2. Learnability: Navigation links are positioned at the top where users are familiar with and are consistent throughout the pages.
 Cursors and font color changes on links on hover to indicate that it is clickable.
 3. Operability: 
-i. Links to external news sources are working
-ii.Forms are working and display an error message when submission fails
+- Links to external news sources are working
+- Forms are working and display an error message when submission fails
 4. Attractiveness: 
-i. Padding and margin are present to improve readability
-ii. Font size and layout changes according to screen size to improve readability. This was achieved with the use of media queries and
+- Padding and margin are present to improve readability
+- Font size and layout changes according to screen size to improve readability. This was achieved with the use of media queries and
 the Boostrap grid system.
 
 # Skeleton
-## Main page: 
+## Main page (web): 
 ![image](readme/main.png)
-### On Mobile:
+## Main Page (mobile):
 ![image](readme/main_mobile.png)
 ## About us page: 
 ![image](readme/about-us.png)
@@ -83,12 +83,12 @@ the Boostrap grid system.
 ![image](readme/report.png)
 
 ### Interface design
-Each page consists on a navigation bar and main content section.
+Each page consists of a navigation bar and main content section.
 Home page: Includes current informational news on a carousel and charts.
 About Us page: Identifies goals of the web page and content you can expect from it.
 Cases page: Includes a map that marks out crime scenes of notorious cases as well as last seen locations of missing people. 
 Pop-ups showing more details of these cases on click.
-Report page: Includes a form for user to post their own cases and display cases posted by others.
+Report page: Includes a form for user to post their own cases and displays cases posted by others.
 
 ### Navigation design(bootstrap components)
 1. Fixed navigation bar on top of every page and highlighted depending on active page that user is on.
@@ -108,18 +108,17 @@ some cases.
 
 # Features
 ## News carousel
-Latest relevant news from local news outlets are fetched from a news api and displayed on a bootstrap carousel. It is however limited to 100 
+Latest relevant news from local news outlets are fetched from a news api and displayed on a bootstrap carousel. It is however, limited to 100 
 requests per day on the free plan.
 Links to the external news sources are made available on the carousel.
 ## Chart
-ApexCharts is used to display datasets retreived from data.gov.sg. 
-Next to it is a brief summary of what can be inferred from the chart.
+ApexCharts is used to display datasets retreived from [data.gov](data.gov.sg) 
 ## Map
 Leaflets map is used to mark out significant locations where notorious crime cases took place.
-A card pop-up on click displays an image and summarissed details of what happened.
+A card pop-up on click displays an image and summarised details of what took place.
 Buttons on the cards bring users to the external news source for further reading.
 ## Form
-Form allows users to create and post their own cases which will then be displayed on a mock bulletin below.
+Form allows users to create and post their own cases which will then be displayed on a mock bulletin at the bottom.
 
 # Technologies and Credits
 HTML, CSS and Javascript languages were used in this project.
@@ -128,7 +127,7 @@ HTML, CSS and Javascript languages were used in this project.
 
 [GitHub](github.com) was used for repositories.
 
-[Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) 5 was used for it's starter template, navigation bar, 
+[Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) was used for it's starter template, navigation bar, 
 carousel and cards. Bootstrap CSS was used when it made more sense to.
 
 [InVision](invisionapp.com) was used for drawing skeleton.
@@ -152,18 +151,20 @@ carousel and cards. Bootstrap CSS was used when it made more sense to.
 Benjamin's missing cases API which he helped me to deploy on [Heroku](www.heroku.com) was used to fetch and post cases. 
 [MongoDB](www.mongodb.com) was used for his database.
 
-Images and articles referenced from [The Straits Times](https://www.straitstimes.com/),[Mothership](https://mothership.sg/),[Yahoo](https://sg.news.yahoo.com/),
-[NLB](eresources.nlb.gov.sg),[AsiaOne](www.asiaone.com),[MustShareNews Youtube](www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews),
+Images and articles referenced from [The Straits Times](https://www.straitstimes.com/),[Mothership](https://mothership.sg/), [Yahoo](https://sg.news.yahoo.com/), 
+[NLB](eresources.nlb.gov.sg), [AsiaOne](www.asiaone.com), [MustShareNews Youtube](www.youtube.com/watch?v=jJ13K41HUw4&ab_channel=MustShareNews), 
 [The Independent](theindependent.sg).
 
-Missing header image from [iStock](https://www.istockphoto.com/illustrations/missing-persons)
+'Missing' header image from [iStock](https://www.istockphoto.com/illustrations/missing-persons)
 
-Pin icon from [Font Awesome](https://fontawesome.com/icons/map-pin?style=solid)
+Thumbtack icon from [Font Awesome](https://fontawesome.com/icons/map-pin?style=solid)
 
 # Testing
 ## Form check
 A submission is checked by reloading the page and seeing that case has been created at the bottom.
 A failed submission due to internal errors will prompt an alert 'Failed to add case'
+A submission with empty feilds will prompt an alert 'Please enter all fields'
+Date validation was done to prevent selection of date beyond the day itself.
 
 ## Delete button check
 Cases are removed when respective delete button is clicked
@@ -173,5 +174,10 @@ All links in the navigation bar were checked on each page to make sure they lead
 
 ## Hyperlink check
 Links on article titles and 'Read More' buttons were checked to make sure they lead to specified article/page.
+
+# Deployment
+1. Navigated to settings of assignment repository
+2. Selected 'branch:master'
+3. Save to be published
 
 
