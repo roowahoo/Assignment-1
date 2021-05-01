@@ -24,6 +24,10 @@ a:hover{
     height:100%
 }
 
+#newsCarousel{
+    margin-top:30px
+}
+
 .carousel-indicators  button {
     opacity:0.5;
     border-radius:5px;
@@ -40,19 +44,20 @@ a:hover{
 }
 
 #sg-map {
-    height: 80vh
+    height: 80vh;
+    margin-top:30px
 }
 
 .font{
     font-family:'Benne', serif ;
 }
 
-#mapCards{
+.mapCards{
     border:none;
     overflow:hidden;
 }
 
-#mapCards img{
+.mapCards img{
     height:200px;
 }
 
@@ -68,7 +73,7 @@ a:hover{
     margin-top:50px;
 }
 
-#caseCards{
+.caseCards{
     color:black;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     line-height: 15px;
@@ -80,10 +85,7 @@ a:hover{
     text-shadow: 5px 8px 8px gray;
 }
 
-#hello{
-    margin-top:150px;
-    width:50%;
-}
+
 
 #hello h1{
     font-family:'Courgette', cursive;
@@ -114,6 +116,11 @@ a:hover{
         margin-left:10px
     }
 
+    #hello{
+    margin-top:20%;
+    width:80%;
+    }
+
     .newsheading h2{
         font-size: 8px;
     }
@@ -136,7 +143,7 @@ a:hover{
     #makeReport h1{
         font-size: 40px;
         text-align: center;
-        padding-top:30px;
+        margin-top:30px;
     }
 
     #makeReport p{
@@ -199,6 +206,11 @@ a:hover{
         margin-left:10px
     }
 
+    #hello{
+    margin-top:10%;
+    width:60%;
+    }
+
     .newsheading h2{
         font-size: 30px;
     }
@@ -216,7 +228,7 @@ a:hover{
     #makeReport h1{
         font-size: 50px;
         text-align: center;
-        padding-top:30px;
+        margin-top:30px;
     }
 
     #makeReport p{

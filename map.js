@@ -27,7 +27,7 @@ async function getMarkers() {
         markers = L.marker([lat,lng]);
         // markers.addTo(map);
         markers.bindPopup(`
-        <div class="card" id='mapCards'>
+        <div class="card mapCards">
             <div class='text-center'>
             <img src="${i.imgSource}" alt="">
             </div>

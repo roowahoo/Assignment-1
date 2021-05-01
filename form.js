@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', async ()=>{
     for (let x of cases) {
         let eachCase=document.createElement('div')
         let html = `
-        <div class="card m-3" id='caseCards' style="width: 18rem;">
+        <div class="card m-3 caseCards" style="width: 18rem;">
         <div class="card-body">
         <p class='text-center'><i class="fas fa-thumbtack pin"></i></p>
           <h3 class="card-title fw-bold pb-2">${x.name}</h3>

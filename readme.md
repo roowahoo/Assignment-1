@@ -68,7 +68,7 @@ Cursors and font color changes on links on hover to indicate that it is clickabl
 4. Attractiveness: 
 - Padding and margin are present to improve readability
 - Font size and layout changes according to screen size to improve readability. This was achieved with the use of media queries and
-the Boostrap grid system.
+the Bootstrap grid system.
 
 # Skeleton
 ## Main page (web): 
@@ -160,20 +160,25 @@ Images and articles referenced from [The Straits Times](https://www.straitstimes
 Thumbtack icon from [Font Awesome](https://fontawesome.com/icons/map-pin?style=solid)
 
 # Testing
-## Form check
-A submission is checked by reloading the page and seeing that case has been created at the bottom.
-A failed submission due to internal errors will prompt an alert 'Failed to add case'
-A submission with empty feilds will prompt an alert 'Please enter all fields'
-Date validation was done to prevent selection of date beyond the day itself.
+## Report form submission
+1. Click on 'reports'
+2. Enter details into form
+3. A submission with empty feilds will prompt an alert 'Please enter all fields'
+3. Click 'submit' and reload page to see new case created below
+4. A failed submission due to internal errors will prompt an alert 'Failed to add case'
 
 ## Delete button check
-Cases are removed when respective delete button is clicked
+1. At reports page, click 'delete' on any case
+2. Case will be deleted from the page
 
 ## Navigation check
-All links in the navigation bar were checked on each page to make sure they lead to the specified place.
+1. Click on any/all links on the navigation bar to take you to your desired page
 
 ## Hyperlink check
-Links on article titles and 'Read More' buttons were checked to make sure they lead to specified article/page.
+1. Go to the main page by clicking on the logo
+2. In the news carousel, hover over the title and click 
+3. Return and go to cases
+4. Select any marker on the map and click on 'read more'
 
 # Deployment
 1. Navigated to settings of assignment repository
