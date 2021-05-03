@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link me-2" aria-current="page" href="./about_us.html">About Us</a>
+                        <a class="nav-link me-2" aria-current="page" href="./aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-2" href="./maps.html">Cases</a>
@@ -49,43 +49,70 @@
             </div>
         </div>
     </nav>
+    <div>
 
+    </div>
     <!-- Carousel -->
     <div class='container' id='newsCarousel'>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 5"></button>
+        <div class='row'>
+            <h1>Latest News</h1>
+            <div id="carouselExampleCaptions" class="carousel slide col-lg-8 col-12" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner" id='news'></div>
+
+
+                <button class="carousel-control-prev caroBtn" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next caroBtn" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
             </div>
+            <div class='col-12 col-lg-4' id='headlines'>
+                <h3>Headlines Worth Reading</h3>
+                <div class='m-3'>
 
-            <div class="carousel-inner" id='news'></div>
+                    <h4><a
+                            href='https://www.straitstimes.com/singapore/courts-crime/guilty-as-charged-huang-na-8-killed-by-man-she-treated-as-an-uncle'>Huang
+                            Na's Murder (2004)</a></h4>
+                    <h4>
+                        <a
+                            href='https://www.straitstimes.com/singapore/courts-crime/from-the-straits-times-archives-in-the-1984-curry-murder-six-were-charged'>Curry
+                            Murder (1987)</a>
+                    </h4>
+                    <h4>
+                        <a
+                            href='https://www.straitstimes.com/singapore/courts-crime/guilty-as-charged-adrian-lim-and-his-2-holy-wives-kidnapped-tortured-and'>Toa
+                            Payoh Ritual Murders (1981)</a>
+                    </h4>
 
+                </div>
 
-            <button class="carousel-control-prev caroBtn" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next caroBtn" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
+            </div>
         </div>
     </div>
 
     <!-- Chart -->
-    <div class='container'>
+    <div class='container mt-5'>
         <div class='row'>
+            <h1>Homicide Statistics</h1>
             <div class='col-md-7 col-12'>
                 <div class='pt-5' id="chart"></div>
             </div>

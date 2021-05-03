@@ -67,8 +67,7 @@ Cursors and font color changes on links on hover to indicate that it is clickabl
 - Forms are working and display an error message when submission fails
 4. Attractiveness: 
 - Padding and margin are present to improve readability
-- Font size and layout changes according to screen size to improve readability. This was achieved with the use of media queries and
-the Bootstrap grid system.
+- Font size and layout changes from left to right on desktop screens to top to bottom on mobile screens to improve readability. This was achieved with the use of media queries and the Bootstrap grid system. 
 
 # Skeleton
 ## Main page (web): 
