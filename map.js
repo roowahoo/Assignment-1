@@ -15,7 +15,7 @@ let sgLayer = L.markerClusterGroup()
 
 
 async function getMarkers() {
-    let response = await axios.get('markers_data.json')
+    let response = await axios.get('markersData.json')
     let cases=response.data.cases
     console.log(cases)
     let lat = parseFloat("")
